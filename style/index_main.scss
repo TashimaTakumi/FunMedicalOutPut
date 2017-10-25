@@ -1,0 +1,65 @@
+body{
+  margin:0;
+  padding: 0;
+  background-color: #DFFFF5;
+  overflow: hidden;
+  position: relative;
+  nav{
+    position: absolute;
+    height:0vh;
+    right:0;
+    z-index: 2;
+    #nameContainer{
+      display: inline-block;
+      background-color: white;
+      border-radius: 5vw;
+      #name{
+        padding: 2vh 2vw;
+      }
+    }
+    #percentageContainer{
+      display: inline-block;
+      background-color: white;
+      border-radius: 5vw;
+      #percentage{
+        padding: 2vh 2vw;
+      }
+    }
+  }
+  main{
+    z-index: 1;
+    height:100vh;
+    position:relative;
+    #commentContainer{
+      position: absolute;
+      background-color:white;
+      color:black;
+      height:80vh;
+      width:35vw;
+      border-radius: 5vw;
+      border-color: black;
+      border-width:medium;
+
+      #comment{
+        padding:5vw;
+        font-size:20px;
+      }
+    }
+    #animalContainer{
+      position: absolute;
+      right:40vw;
+      bottom:-30vh;
+      #animal{
+          height: 80vh;
+      }
+    }
+    #mountainContainer{
+      position: absolute;
+      right:-30vw;
+      bottom:-100px;
+      #mountain{
+        height:100vh;
+      }
+    }
+  }
+}
