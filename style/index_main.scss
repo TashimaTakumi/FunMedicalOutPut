@@ -7,22 +7,28 @@ body{
   nav{
     position: absolute;
     height:0vh;
-    right:0;
+    right:5vw;
+    top:5vh;
     z-index: 2;
+    font-size:20px;
     #nameContainer{
       display: inline-block;
       background-color: white;
       border-radius: 5vw;
-      #name{
-        padding: 2vh 2vw;
+      #nameText{
+        padding: 1vh 2vw;
       }
+
     }
     #percentageContainer{
       display: inline-block;
       background-color: white;
       border-radius: 5vw;
-      #percentage{
-        padding: 2vh 2vw;
+      #percentageText{
+
+        padding: 1vh 2vw;
+        #percentage{
+        }
       }
     }
   }
@@ -34,28 +40,51 @@ body{
       position: absolute;
       background-color:white;
       color:black;
-      height:80vh;
-      width:35vw;
+      height:55vh;
+      width:40vw;
       border-radius: 5vw;
       border-color: black;
       border-width:medium;
-
-      #comment{
-        padding:5vw;
-        font-size:20px;
+      left:5vw;
+      top:5vh;
+      #comp{
+        padding:5vh 5vw 0;
+        font-size: 20px;
       }
+
     }
     #animalContainer{
       position: absolute;
-      right:40vw;
-      bottom:-30vh;
+      height:100vh;
+      right:35vw;
+      bottom:-70vh;
       #animal{
-          height: 80vh;
+          height: 40%;
       }
     }
+    #signBoardContainerContainer{
+      position:absolute;
+      bottom:35vh;
+      right:70vw;
+      #signBoardContainer{
+        position: relative;
+        #signBoard{
+          position: absolute;
+          width:20vw;
+        }
+        #signs{
+          position: absolute;
+          width:20vw;
+          font-size: 40px;
+          left:calc(20vw/2 - 40px);
+          top:6vh;
+        }
+      }
+    }
+
     #mountainContainer{
       position: absolute;
-      right:-30vw;
+      right:-25vw;
       bottom:-100px;
       #mountain{
         height:100vh;

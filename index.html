@@ -7,42 +7,56 @@
     <script src="js/index_main.js" /></script>
   </head>
   <body>
-    <nav>
-      <div id="nameContainer">
-        <p id="name">~~~~~さん</p>
-      </div>
-      <div id="percentageContainer">
-        <p id="percentage">山頂まであと　　　メートル</p>
-      </div>
-    </nav>
-    <main>
-      <div id="commentContainer">
-        <p id="comment">
-          これはテスト文章です<br>
-          これはテスト文章です<br>
-          これはテスト文章です<br>
-          これはテスト文章です<br>
-          これはテスト文章です<br>
-          これはテスト文章です<br>
-          これはテスト文章です<br>
-          これはテスト文章です<br>
-          これはテスト文章です<br>
-          これはテスト文章です<br>
-          これはテスト文章です<br>
-          これはテスト文章です<br>
-          これはテスト文章です<br>
-          これはテスト文章です<br>
-          これはテスト文章です<br>
-        </p>
-      </div>
+    <div id="page1">
+      <h1>This is Setting Page</h1>
+      <p>for <span style="color:BLACK">SUBSCRIBED</span> patient datum is following</p>
+      <p>Number is <input id="patientNo" type="text" /></p>
+      <input type="button" onclick="changeVisial()" value="Call the datum of Patient number" />
+      <hr style="border-top:dashed 10px black" noshade>
+      <p>for <span style="color:RED">NEW </span>patient datum is following</p>
+      <p>Name is <input id="patientFirstName" type="text" />(FirstName) <input id="patientLastName" type="text" />(LastName)</p>
+      <input type="button" onclick="changeVisial()" value="Create a new patient datum" />
+    </div>
+    <div id="page2" onclick="initVisial()">
+      <nav>
+        <div id="nameContainer">
+          <p id="nameText"><span id="nameFirst">田島</span>　<span id="nameLast">拓実</span>&nbspさん</p>
+        </div>
+        <div id="percentageContainer">
+          <p id="percentageText">山頂まであと<span id="percentage">100</span>パーセント</p>
+        </div>
+      </nav>
+      <main>
+        <div id="commentContainer">
+          <div id="comp">
+            <h1>前回と比べて</h1>
+            <p>
+            これはテスト文章ですこれはテスト文章であり<br>
+            これはテスト文章ですこれはテスト文章であり<br>
+            これはテスト文章ですこれはテスト文章であり<br>
+            これはテスト文章ですこれはテスト文章であり<br>
+            これはテスト文章ですこれはテスト文章であり<br>
+            これはテスト文章ですこれはテスト文章であり<br>
+            これはテスト文章ですこれはテスト文章であり<br>
+            <p>
+          </div>
 
-      <div id="mountainContainer">
-        <img id="mountain" src="img/mountain.png">
-      </div>
-      <div id="animalContainer">
-        <img id="animal" src="img/dog.png">
-      </div>
-    </main>
+        </div>
+
+        <div id="mountainContainer">
+          <img id="mountain" src="img/mountain.png">
+        </div>
+        <div id="signBoardContainerContainer">
+          <div id="signBoardContainer">
+            <img id="signBoard" src="img/signboard.png">
+            <p id="signs"><span id="sign">0</span>合目</p>
+          </div>
+        </div>
+        <div id="animalContainer">
+          <img id="animal" src="img/dog.png">
+        </div>
+      </main>
+    </div>
   </body>
   <footer>
   </footer>
